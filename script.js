@@ -40,33 +40,36 @@ let createTable = function() {
     row1.appendChild(data1);
     row1.appendChild(data2);
     row1.appendChild(data3);
+    row1.appendChild(image);
 
     row2.appendChild(data4);
     row2.appendChild(data5);
     row2.appendChild(data6);
-
+    row2.appendChild(image);
 
     row3.appendChild(data7);
     row3.appendChild(data8);
     row3.appendChild(data9);
+    row3.appendChild(image);
 
     table.appendChild(row1);
     table.appendChild(row2);
     table.appendChild(row3);
+    table.appendChild(image);
 
     let content = document.getElementById("content");
-    content.appendChild(table)
+    content.appendChild(table);
+    content.appendChild(image);
 
 
 };
 
 let onOver = function(id){
-
-   id.style.backgroundColor = "Black";
-
-    
+   //id.style.backgroundColor = "Black";
+    image = document.createElement("IMG");
+    image.src = "x.png";
 };
 
 let onOut = function (id) {
     id.style.backgroundColor = "white";
-}
+};
